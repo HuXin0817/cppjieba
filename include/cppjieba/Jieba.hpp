@@ -141,7 +141,7 @@ class Jieba {
   static string getPath(const string& path, const string& default_file) {
     if (path.empty()) {
       string current_dir = getCurrentDirectory();
-      return pathJoin(pathJoin(current_dir, "dict"), default_file);
+      return pathJoin(current_dir, default_file);
     }
     return path;
   }
