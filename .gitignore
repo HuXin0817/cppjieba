@@ -3,6 +3,7 @@ tags
 *swp
 *.out
 *.o
+*.so
 *.d
 *.ut
 log
@@ -17,3 +18,9 @@ t.*
 build
 Testing/Temporary/CTestCostData.txt
 Testing/Temporary/LastTest.log
+
+__pycache__
+
+.idea/
+.vscode/
+
