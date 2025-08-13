@@ -14,8 +14,11 @@ ext_modules = [
             "../include",
             "../deps/limonp/include",
         ],
+        define_macros=[("NDEBUG", None)],  # 关闭调试模式
+        extra_compile_args=["-O3", "-DNDEBUG"],  # 编译优化
+        extra_link_args=["-O3"],  # 链接优化
         language='c++',
-        cxx_std=11,
+        cxx_std=17,
     ),
 ]
 
